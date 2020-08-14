@@ -1,66 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
-
-:root{
-/*  --font: 'Bubblegum Sans', cursive; */
-/*  --font: 'Fredoka One', cursive; */
-/*  --font: 'Sacramento', cursive;; */
- --font: 'Concert One', cursive;
-/*  --font: 'Chewy', cursive; */
- 
- --gold-gradient: linear-gradient(#8f6B29, #FDE08D, #DF9F28);
- --silver-gradient: linear-gradient(#262626,#eaeaea,#262626);
- 
-
- --gold-confetti: url("https://media.tenor.com/images/412d7e7f6edacc4ab898485cd26df24c/tenor.gif");
+:root {
+    /*  --font: 'Bubblegum Sans', cursive; */
+    /*  --font: 'Fredoka One', cursive; */
+    /*  --font: 'Sacramento', cursive;; */
+    --font: 'Concert One', cursive;
+    /*  --font: 'Chewy', cursive; */
+    --gold-gradient: linear-gradient(#8f6B29, #FDE08D, #DF9F28);
+    --silver-gradient: linear-gradient(#262626, #eaeaea, #262626);
+    --gold-confetti: url("https://media.tenor.com/images/412d7e7f6edacc4ab898485cd26df24c/tenor.gif");
 }
 
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
- background-color: #ff99ff;
- background-image: var(--gold-confetti);
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff99ff;
+    background-image: var(--gold-confetti);
 }
 
+h1>span {
+    /*color:white;*/
+    top: 35%;
+    position: absolute;
+    transition: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    /*   font-family: sans-serif; */
+    font-family: var(--font);
+    font-style: italic;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-h1>span{
-  /*color:white;*/
-  top:35%;
-  position: absolute;
-  transition: translateY(-50%);
-  margin: 0;
-  padding: 0;
-  width:100%;
-  text-align: center;
-/*   font-family: sans-serif; */
- font-family: var(--font);
-  font-style: italic;
-  font-size:3em;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  color:transparent;
+h1>span:nth-child(1) {
+    z-index: 2;
 }
-h1>span:nth-child(1)
-{
-  z-index: 2;
-}
-h1>span:nth-child(2)
-{
-  z-index: 1;
-  text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626,
-  4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626, 6px 20px 20px rgba(0,0,0,1),
-  -1px -1px 0 #fff;
+
+h1>span:nth-child(2) {
+    z-index: 1;
+    text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626, 4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626, 6px 20px 20px rgba(0, 0, 0, 1), -1px -1px 0 #fff;
 }
